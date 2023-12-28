@@ -73,7 +73,7 @@ const ContentWrap = styled.div`
   .left {
     width: 45%;
     padding-left: 5%;
-    padding-top: 5%;
+    padding-top: 70px;
     &_description-main {
       font-size: 20px;
       font-weight: 600;
