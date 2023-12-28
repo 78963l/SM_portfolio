@@ -1,13 +1,13 @@
 import { styled } from "styled-components";
 import Github from "../asset/images/github.svg";
 
-const Navbar = styled.nav`
+const Navbar = styled.footer`
   display: flex;
   position: absolute;
   width: 100%;
   height: 110px;
   bottom: 0px;
-  background-color: white;
+  background-color: lightgrey;
   color: black;
   align-items: center;
   justify-content: space-between;
@@ -23,6 +23,11 @@ const Navbar = styled.nav`
 `;
 
 export default function Footer() {
+  // github 페이지 띄우기
+  const githubPageOpen = () => {
+    window.open("https://github.com/78963l");
+  };
+
   return (
     <Navbar>
       <div className="left">
@@ -32,7 +37,13 @@ export default function Footer() {
         </div>
       </div>
       <div className="right">
-        <Github />
+        <button
+          onClick={() => {
+            githubPageOpen();
+          }}
+        >
+          <Github />
+        </button>
       </div>
     </Navbar>
   );

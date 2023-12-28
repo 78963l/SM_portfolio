@@ -1,11 +1,10 @@
 import styled from "styled-components";
 import SmileSvg from "../asset/images/smile.svg";
 
-const Navbar = styled.nav`
+const Navbar = styled.header`
   display: flex;
-  position: absolute;
   width: 100%;
-  height: 100px;
+  height: 150px;
   justify-content: space-between;
   align-items: center;
   background: white;
@@ -13,14 +12,14 @@ const Navbar = styled.nav`
     display: flex;
     align-items: center;
     margin-left: 10px;
-    font-size: 25px;
-    font-weight: 800;
     &_logo {
-      width: 30px;
-      height: 30px;
+      width: 80px;
+      height: 80px;
       margin: 30px;
     }
     &_title {
+      font-size: 35px;
+      font-weight: 800;
       color: black;
     }
   }
@@ -28,6 +27,7 @@ const Navbar = styled.nav`
     display: flex;
     color: black;
     margin: 10px;
+    font-size: 22px;
     ul {
       display: flex;
 
