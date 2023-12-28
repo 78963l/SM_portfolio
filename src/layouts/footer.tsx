@@ -5,17 +5,20 @@ const Navbar = styled.footer`
   display: flex;
   position: absolute;
   width: 100%;
-  height: 190px;
+  height: 140px;
   bottom: 0px;
   background-color: lightgrey;
   color: black;
   align-items: center;
   justify-content: space-between;
   .left {
+    height: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     margin: 80px;
-    font-size: 20px;
+    font-size: 15px;
+    line-height: 1.5;
   }
   .right {
     display: flex;
@@ -25,8 +28,8 @@ const Navbar = styled.footer`
       height: 100%;
     }
     button {
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
     }
   }
 `;

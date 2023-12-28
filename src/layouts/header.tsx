@@ -2,6 +2,10 @@ import styled, { keyframes } from "styled-components";
 import SmileSvg from "../asset/images/smile.svg";
 
 export default function Header() {
+  const test = () => {
+    alert("개발중입니다");
+  };
+
   return (
     <>
       <Navbar>
@@ -12,9 +16,33 @@ export default function Header() {
         <div className="right">
           <div className="logo">
             <ul>
-              <li>홈</li>
-              <li>프로젝트</li>
-              <li>연락하기</li>
+              <li>
+                <button
+                  onClick={() => {
+                    test();
+                  }}
+                >
+                  홈
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => {
+                    test();
+                  }}
+                >
+                  프로젝트
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => {
+                    test();
+                  }}
+                >
+                  연락하기
+                </button>
+              </li>
             </ul>
           </div>
         </div>
@@ -55,22 +83,23 @@ const colorChange = keyframes`
 const Navbar = styled.header`
   display: flex;
   width: 100%;
-  height: 150px;
+  height: 100px;
   justify-content: space-between;
   align-items: center;
   background: white;
+  z-index: 1;
   .left {
     display: flex;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 20px;
     &_logo {
-      width: 50px;
-      height: 50px;
-      margin: 30px;
+      width: 40px;
+      height: 40px;
+      margin: 20px;
       animation: ${colorChange} 5s 1s infinite;
     }
     &_title {
-      font-size: 35px;
+      font-size: 25px;
       font-weight: 800;
       color: black;
     }
@@ -79,7 +108,7 @@ const Navbar = styled.header`
     display: flex;
     color: black;
     margin: 10px;
-    font-size: 22px;
+    font-size: 16px;
     ul {
       display: flex;
 
