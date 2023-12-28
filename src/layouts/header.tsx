@@ -13,6 +13,8 @@ const Navbar = styled.nav`
     display: flex;
     align-items: center;
     margin-left: 10px;
+    font-size: 25px;
+    font-weight: 800;
     &_logo {
       width: 30px;
       height: 30px;

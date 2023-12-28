@@ -1,8 +1,14 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
+import fontNanumsquare from "@/asset/fonts/nanumsquareround.css";
+import fontPretendard from "@/asset/fonts/pretendardvariable.css";
+import fontGmarketSans from "@/asset/fonts/GmarketSans.css";
 
 const GlobalStyles = createGlobalStyle`
     ${reset}
+    ${fontNanumsquare};
+    ${fontPretendard};
+    ${fontGmarketSans};
     *, *::before, *::after {
         font-family: 'Pretendard' !important;
         font-weight: 400;
