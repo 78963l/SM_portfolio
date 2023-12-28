@@ -7,5 +7,4 @@
 
 <br>
 🌐 URL
-
--
+- https://sm-portfolio-psi.vercel.app/
