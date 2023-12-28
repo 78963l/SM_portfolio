@@ -19,7 +19,7 @@ export default function Home() {
         <div className="left">
           <div className="left_description-main">
             <p>안녕하세요! 👋</p>
-            <p>도전을 즐기는 개발자의 포트폴리오 입니다.</p>
+            <p>도전을 즐기는 SM개발자 포트폴리오 입니다.</p>
           </div>
           <div className="left_description-sub">
             <p>
