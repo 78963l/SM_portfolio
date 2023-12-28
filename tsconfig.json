@@ -26,8 +26,9 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "**/*.css",
     ".next/types/**/*.ts",
-    "src/styles/globalStyles.ts"
+    "src/styles/globalStyles.js"
   ],
   "exclude": ["node_modules"]
 }

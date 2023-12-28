@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 import Lottie from "react-lottie-player";
 // Alternatively:
 // import Lottie from 'react-lottie-player/dist/LottiePlayerLight'
 
-import lottieJson from "/public/ani.json";
+import lottieJson from "@/asset/json/ani.json";
 
 export default function Ani() {
   const [load, setLoad] = useState(false);
