@@ -5,7 +5,7 @@ const Navbar = styled.footer`
   display: flex;
   position: absolute;
   width: 100%;
-  height: 110px;
+  height: 190px;
   bottom: 0px;
   background-color: lightgrey;
   color: black;
@@ -14,11 +14,20 @@ const Navbar = styled.footer`
   .left {
     display: flex;
     flex-direction: column;
-    margin: 40px;
+    margin: 80px;
+    font-size: 20px;
   }
   .right {
     display: flex;
-    margin: 40px;
+    margin: 80px;
+    &_logo {
+      width: 100%;
+      height: 100%;
+    }
+    button {
+      width: 40px;
+      height: 40px;
+    }
   }
 `;
 
@@ -42,7 +51,7 @@ export default function Footer() {
             githubPageOpen();
           }}
         >
-          <Github />
+          <Github className="right_logo" />
         </button>
       </div>
     </Navbar>

@@ -1,48 +1,10 @@
 import Head from "next/head";
+import dynamic from "next/dynamic";
 import Layout from "@/layouts/layout";
 import styled from "styled-components";
 
-const ContentWrap = styled.div`
-  display: flex;
-  width: 100%;
-  height: 100%;
-  margin-top: 100px;
-  .left {
-    width: 45%;
-    padding-left: 5%;
-    &_description-main {
-      font-size: 30px;
-      font-weight: 600;
-      margin-bottom: 60px;
-      p {
-        margin-bottom: 25px;
-      }
-    }
-    &_description-sub {
-      font-size: 25px;
-      line-height: 1.5;
-      p {
-        margin-bottom: 20px;
-      }
-    }
-    &_description-btn {
-      margin-top: 95px;
-      width: 200px;
-      height: 60px;
-      button {
-        font-size: 20px;
-        color: white;
-        background-color: #9a87eb;
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-      }
-    }
-  }
-  .right {
-    width: 55%;
-  }
-`;
+// DynamicComponentWithNoSSR
+const Ani = dynamic(() => import("@/components/animation"), { ssr: false });
 
 export default function Home() {
   return (
@@ -85,8 +47,55 @@ export default function Home() {
             <button>프로젝트 보러가기</button>
           </div>
         </div>
-        <div className="right">test</div>
+        <div className="right">
+          <Ani></Ani>
+        </div>
       </ContentWrap>
     </Layout>
   );
 }
+
+const ContentWrap = styled.div`
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  .left {
+    width: 45%;
+    padding-left: 5%;
+    padding-top: 10%;
+    &_description-main {
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 60px;
+      p {
+        margin-bottom: 25px;
+      }
+    }
+    &_description-sub {
+      font-size: 25px;
+      line-height: 1.5;
+      p {
+        margin-bottom: 20px;
+      }
+    }
+    &_description-btn {
+      margin-top: 95px;
+      width: 200px;
+      height: 60px;
+      button {
+        font-size: 20px;
+        color: white;
+        background-color: #9a87eb;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
+  .right {
+    width: 55%;
+    height: 70%;
+  }
+`;
