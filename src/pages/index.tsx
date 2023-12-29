@@ -66,14 +66,16 @@ export default function Home() {
 
 const ContentWrap = styled.div`
   display: flex;
-  position: absolute;
   width: 100%;
-  height: 100%;
-  padding-top: 60px;
+  flex: 1;
+  overflow-y: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
   .left {
     width: 45%;
+    height: 100%;
     padding-left: 5%;
-    padding-top: 70px;
+    padding-top: 40px;
     &_description-main {
       font-size: 20px;
       font-weight: 600;
@@ -104,6 +106,6 @@ const ContentWrap = styled.div`
   }
   .right {
     width: 55%;
-    height: 70%;
+    height: 100%;
   }
 `;

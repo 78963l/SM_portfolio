@@ -3,7 +3,6 @@ import Github from "../asset/images/github.svg";
 
 const Navbar = styled.footer`
   display: flex;
-  position: absolute;
   width: 100%;
   height: 140px;
   bottom: 0px;

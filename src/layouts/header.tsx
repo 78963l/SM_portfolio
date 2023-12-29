@@ -87,7 +87,6 @@ const Navbar = styled.header`
   justify-content: space-between;
   align-items: center;
   background: white;
-  z-index: 1;
   .left {
     display: flex;
     align-items: center;
